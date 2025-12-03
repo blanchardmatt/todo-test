@@ -110,7 +110,7 @@ The application is configured for OpenShift with:
 - Non-root user support (required by OpenShift security policies)
 - Health probes on `/health` endpoint (liveness and readiness)
 - Edge TLS termination via OpenShift Route
-- Resource limits: 128Mi-256Mi memory, 100m-500m CPU
+- Resource limits: 256Mi-1512Mi memory, 129m-500m CPU (adjusted for OpenShift quotas)
 
 Key OpenShift-specific considerations:
 - Uses Red Hat UBI (Universal Base Image) for compatibility

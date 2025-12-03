@@ -41,11 +41,11 @@ items:
                 periodSeconds: 5
               resources:
                 limits:
-                  memory: "256Mi"
+                  memory: "1512Mi"
                   cpu: "500m"
                 requests:
-                  memory: "128Mi"
-                  cpu: "100m"
+                  memory: "256Mi"
+                  cpu: "129m"
 
   # Service
   - apiVersion: v1
