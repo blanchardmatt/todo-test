@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python test_app.py:*)",
+      "Bash(python run.py:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

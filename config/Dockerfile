@@ -5,14 +5,14 @@ FROM registry.access.redhat.com/ubi9/python-39:latest
 WORKDIR /app
 
 # Copy requirements first for better caching
-COPY requirements.txt .
+COPY config/requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY app.py .
-COPY templates/ templates/
+COPY src/app.py .
+COPY src/templates/ templates/
 
 # OpenShift runs containers as arbitrary user IDs
 # Ensure proper permissions
