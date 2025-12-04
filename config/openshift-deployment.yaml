@@ -39,13 +39,6 @@ items:
                   port: 8080
                 initialDelaySeconds: 5
                 periodSeconds: 5
-              resources:
-                limits:
-                  memory: "1512Mi"
-                  cpu: "500m"
-                requests:
-                  memory: "256Mi"
-                  cpu: "129m"
 
   # Service
   - apiVersion: v1
