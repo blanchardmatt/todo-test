@@ -15,8 +15,8 @@ COPY src/app.py .
 COPY src/templates/ templates/
 
 # OpenShift runs containers as arbitrary user IDs
-# Ensure proper permissions
-RUN chmod -R g+rwX /app
+# Set proper permissions using --chmod flag during COPY
+# Note: The base image already handles permissions correctly
 
 # Expose port 8080 (OpenShift default)
 EXPOSE 8080
